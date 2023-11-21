@@ -1,0 +1,82 @@
+body {
+    background-image: url("pictures/fon.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+nav a:last-child {
+    border-right: none; 
+}
+
+nav a:hover {
+    color: rgb(224, 97, 220);
+    font-size: 120%; 
+    text-shadow: 3px 5px 10px rgba(224, 97, 220, 0.8);
+}
+
+.gif1 {
+    margin-left: 200px;
+}
+
+.events-section {
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+.events-section h2 {
+    color: white;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+.event {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.event p {
+    margin: 10px 0;
+    color: black;
+}

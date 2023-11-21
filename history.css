@@ -1,0 +1,60 @@
+body {
+    background-image: url("pictures/fon.jpeg");
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+p + p {
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: #f750de;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+h1:hover, h2:hover {
+    text-shadow: 0 0 10px rgba(247, 80, 222, 0.8), 0 0 20px rgba(247, 80, 222, 0.8), 0 0 30px rgba(247, 80, 222, 0.8);
+    color: #f750de;
+}
+
+img {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    display: block;
+    margin: 20px auto;
+}
+
+img:hover {
+    box-shadow: 0 0 10px rgba(247, 80, 222, 0.8), 0 0 20px rgba(247, 80, 222, 0.8), 0 0 30px rgba(247, 80, 222, 0.8);
+}
+
+p:hover {
+    text-shadow: 0 0 10px rgba(247, 80, 222, 0.8), 0 0 20px rgba(247, 80, 222, 0.8), 0 0 30px rgba(247, 80, 222, 0.8);
+    color: rgb(247, 80, 222);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    h1, h2 {
+        margin-left: 0;
+    }
+
+    #backToTop {
+        margin-left: 0;
+    }
+}
