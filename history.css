@@ -48,13 +48,3 @@ p:hover {
 }
 
 
-
-@media only screen and (max-width: 768px) {
-    h1, h2 {
-        margin-left: 0;
-    }
-
-    #backToTop {
-        margin-left: 0;
-    }
-}

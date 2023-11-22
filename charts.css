@@ -46,3 +46,8 @@ div p a {
 div p a:hover {
     color: rgb(247, 80, 222);
 }
+
+
+.first{
+    margin-left: 50px;
+}

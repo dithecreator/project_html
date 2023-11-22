@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-    background-color: black;
+    background-color: rgb(59, 58, 58);
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -29,11 +29,6 @@ nav a:last-child {
     border-right: none;
 }
 
-nav a:hover {
-    background-color: rgb(255, 182, 193);
-    color: black;
-    box-shadow: 3px 5px 10px 5px rgba(255, 182, 193, 0.8);
-}
 
 h1 {
     text-align: center;
@@ -70,3 +65,7 @@ h1 {
     color: rgb(255, 182, 193);
     margin-top: 50px;
 }
+
+
+
+
