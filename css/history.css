@@ -1,5 +1,5 @@
 body {
-    background-image: url("pictures/fon.jpeg");
+    background-image: url("../pictures/fon.jpeg");
     font-family: Arial, sans-serif;
     color: white;
     margin: 20px;
@@ -42,9 +42,19 @@ img:hover {
     box-shadow: 0 0 10px rgba(247, 80, 222, 0.8), 0 0 20px rgba(247, 80, 222, 0.8), 0 0 30px rgba(247, 80, 222, 0.8);
 }
 
-p:hover {
-    text-shadow: 0 0 10px rgba(247, 80, 222, 0.8), 0 0 20px rgba(247, 80, 222, 0.8), 0 0 30px rgba(247, 80, 222, 0.8);
-    color: rgb(247, 80, 222);
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
+
+nav a:hover {
+    color: rgb(247, 80, 222);
+    font-size: 120%;
+    text-shadow: 3px 5px 10px rgba(247, 80, 222, 0.8);
+}
+
+
 
 

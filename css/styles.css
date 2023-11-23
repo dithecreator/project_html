@@ -1,5 +1,5 @@
 body {
-    background-image: url("pictures/fon.jpeg");
+    background-image: url("../pictures/fon.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -21,18 +21,15 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-}
-
-nav a:last-child {
-    border-right: none; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 nav a:hover {
+    transform: scale(1.1);
     color: rgb(224, 97, 220);
-    font-size: 120%; 
     text-shadow: 3px 5px 10px rgba(224, 97, 220, 0.8);
 }
+
 
 .gif1 {
     margin-left: 200px;

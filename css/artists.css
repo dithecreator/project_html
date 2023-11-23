@@ -5,12 +5,17 @@ html, body {
 }
 
 body {
-    background-image: url("pictures/fon.jpeg");
+    background-image: url("../pictures/fon.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     min-height: 100vh;
 }
+
+body {
+    background-size: 100% 100%;
+}
+
 
 .floating-circles {
     position: absolute;
@@ -30,6 +35,14 @@ body {
     overflow: hidden;
     border-radius: 50%;
     animation: floatAnimation 3s infinite alternate;
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 45%;
+        height: auto;
+        margin: 10px; 
+    }
 }
 
 @keyframes floatAnimation {
@@ -57,8 +70,13 @@ body {
     height: 100%;
     border: 2px solid rgb(224, 97, 220);
     border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(224, 97, 220, 0.8);
+    box-shadow: 0 0 5px 2px rgba(224, 97, 220, 0.8);
     z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle:hover::before {
+    transform: translateY(10px);
 }
 
 .circle a {
@@ -86,3 +104,25 @@ body {
     cursor: pointer;
 }
 
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(247, 80, 222);
+    font-size: 120%;
+    text-shadow: 3px 5px 10px rgba(247, 80, 222, 0.8);
+}
+
+
+.gif1 {
+    margin-left: 200px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gif1:hover {
+    transform: scale(1.1);
+}

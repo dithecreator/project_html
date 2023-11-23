@@ -11,7 +11,7 @@ body {
     justify-content: center;
     font-family: Arial, sans-serif;
     color: white;
-    background-image: url("pictures/fon.jpeg");
+    background-image: url("../pictures/fon.jpeg");
     background-size: cover;
 }
 
@@ -50,4 +50,28 @@ div p a:hover {
 
 .first{
     margin-left: 50px;
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(247, 80, 222);
+    font-size: 120%;
+    text-shadow: 3px 5px 10px rgba(247, 80, 222, 0.8);
+}
+
+
+.gif1 {
+    margin-left: 200px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gif1:hover {
+    transform: scale(1.1);
 }
