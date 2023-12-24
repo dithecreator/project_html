@@ -99,6 +99,21 @@
         </audio>
     </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var songs = document.querySelectorAll('div');
+
+        songs.forEach(function (song) {
+            song.addEventListener('mouseenter', function () {
+                this.classList.add('hovered');
+            });
+
+            song.addEventListener('mouseleave', function () {
+                this.classList.remove('hovered');
+            });
+        });
+    });
+</script>
 
 
 </body>

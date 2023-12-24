@@ -30,6 +30,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Галерея</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tests.html">Тесты</a>
+                </li>
             </ul>
             <img class="gif1 ml-auto" src="pictures/gif1.gif" alt="Логотип" width="200px" height="17.5px">
         </div>
@@ -37,6 +40,8 @@
 
     <div class="container mt-4">
         <div class="events-section">
+            <button id="changeColorBtn" class="btn btn-primary mt-3">Изменить цвет</button>
+
             <h2>Предстоящие события</h2>
             <div class="carousel">
                 <img src="pictures/concert1.jpeg" class="img-fluid">
@@ -62,5 +67,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function getRandomColor() {
+                let letters = "0123456789ABCDEF";
+                let color = "#";
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+            function changeBackgroundColor() {
+                let eventsSection = document.querySelector('.events-section');
+                eventsSection.style.backgroundColor = getRandomColor();
+            }
+    
+            let changeColorBtn = document.getElementById('changeColorBtn');
+            changeColorBtn.addEventListener('click', changeBackgroundColor);
+        });
+    </script>
+    
 </body>
 </html>

@@ -96,5 +96,30 @@
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eZd7o1tYHnQ?si=vBOF4OHk6FC04Ufo" title="YouTube video player" allowfullscreen></iframe>
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('nav a');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('mouseover', function () {
+                    this.style.color = getRandomColor();
+                });
+    
+                link.addEventListener('mouseout', function () {
+                    this.style.color = 'white';
+                });
+            });
+            function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        });
+    </script>
 </body>
 </html>

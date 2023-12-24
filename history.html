@@ -82,6 +82,58 @@
             28 декабря 2020 года участники лейбла Gazgolder представили новогодний концерт «GazЗаказ», где вживую исполнили свои главные хиты. В записи приняли участие Баста, T-Fest, Matrang, Anikv, Вадяра Блюз, Zivert, SALUKI, Kyivstoner и Lucaveros.</p>
 
     </div>
+
+
+    <script>
+
+        let headings = document.querySelectorAll('h1, h2');
+        let paragraphs = document.querySelectorAll('p');
+
+
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+headings.forEach(heading => {
+    heading.addEventListener('mouseover', () => {
+        heading.style.color = getRandomColor();
+    });
+
+    heading.addEventListener('mouseout', () => {
+        heading.style.color = '#f750de'; 
+    });
+});
+
+paragraphs.forEach(paragraph => {
+    paragraph.addEventListener('mouseover', () => {
+        paragraph.style.color = getRandomColor();
+    });
+
+    paragraph.addEventListener('mouseout', () => {
+        paragraph.style.color = 'white'; 
+    });
+});
+
+
+let images = document.querySelectorAll('img');
+
+images.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        image.style.transform = 'scale(1.1)';
+    });
+
+    image.addEventListener('mouseout', () => {
+        image.style.transform = 'scale(1)';
+    });
+});
+
+    </script>
 </body>
 
 </html>

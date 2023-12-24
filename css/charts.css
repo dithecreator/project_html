@@ -75,3 +75,21 @@ nav a:hover {
 .gif1:hover {
     transform: scale(1.1);
 }
+
+
+div.hovered {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(247, 80, 222, 0.5);
+}
+
+
+.add-to-favorites {
+    color: gold; 
+    font-size: 1.2em; 
+    margin-left: 5px; 
+    cursor: pointer;
+}
+
+.add-to-favorites:hover {
+    color: yellow; 
+}

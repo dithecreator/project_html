@@ -53,7 +53,18 @@
         </tbody>
     </table>
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var rows = document.querySelectorAll("tbody tr");
+            rows.forEach(function (row) {
+                row.addEventListener("click", function () {
+                    alert("Исполнитель: " + row.cells[0].innerText +
+                        "\nМесто: " + row.cells[1].innerText +
+                        "\nДата и время: " + row.cells[2].innerText);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

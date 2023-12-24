@@ -126,3 +126,17 @@ nav a:hover {
 .gif1:hover {
     transform: scale(1.1);
 }
+
+
+.circle.hovered {
+    animation: rotateAnimation 1s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
